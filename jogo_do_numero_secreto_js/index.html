@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the number</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1>Choice the <span class="container__texto-azul">secret number</span></h1>
+                    <p class="texto__paragrafo">Choose a number between 1 and 100</p>
+                </div>
+                <input type="number" min="1" max="100" class="container__input">
+                <div class="chute container__botoes">
+                    <button onclick="verificarChute()" class="container__botao">Guess</button>
+                    <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao">New game</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
